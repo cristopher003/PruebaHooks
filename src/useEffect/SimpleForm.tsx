@@ -9,15 +9,7 @@ export const SimpleForm = () => {
         email:''
     })
 
-    const {username, email} = formState;
-
-    const handleInputChange = ({target}) => {
-        const {name,value} = target;
-        setFormState({
-            ...formState,
-            [name]: value
-        })
-    }
+   
 
 
     useEffect(() => {

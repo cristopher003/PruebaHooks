@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useFetch } from '../hooks/useFetch'
 import useCounter from '../hooks/useCounter';
 

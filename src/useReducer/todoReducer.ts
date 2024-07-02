@@ -1,5 +1,11 @@
 
-export const todoReducer = (initialState=[], action) => {
+export interface Todo {
+    id?: number,
+    todo?: string,
+    done?: boolean
+  }
+
+export const todoReducer = (initialState:Todo[]=[], action:any) => {
 
     switch (action.type) {
         case '[TODO] add Todo':
@@ -19,6 +25,6 @@ export const todoReducer = (initialState=[], action) => {
             });
     
         default:
-            initialState;
+            return initialState;
     }
 }

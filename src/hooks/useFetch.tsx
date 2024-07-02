@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 
 export interface getFetch{
     data:any,
@@ -33,7 +33,7 @@ export const useFetch = (url:string) => {
           loading:false,
           error:null
         })
-      } catch (error) {
+      } catch (error :any) {
         setstate({
           data:null,
           loading:false,

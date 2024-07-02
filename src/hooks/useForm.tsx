@@ -7,8 +7,9 @@ export const useForm = (InitialForm={}) => {
 
 
 
-    const handleInputChange = ({target}) => {
-        const {name,value} = target;
+
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const {name,value} = event.target;
         setFormState({
             ...formState,
             [name]: value
